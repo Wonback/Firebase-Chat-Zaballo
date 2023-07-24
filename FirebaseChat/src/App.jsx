@@ -26,7 +26,7 @@ function App() {
     //Si el usuaro especifica el nombre del chat, se renderiza el chat, de lo contrario se renderiza el componente preguntando el nombre de la room a la que quiere ingresar
     <div>
       {room ? (
-        <Chat></Chat>
+        <Chat room={room}></Chat>
       ) : (
         <div className="room">
           <label>Enter room name</label>
